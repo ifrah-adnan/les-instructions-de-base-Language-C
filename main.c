@@ -119,15 +119,38 @@ int main() {
 	printf("%d secondes = %d heures, %d minutes, %d secondes\n", seconde, heure, minute, scd);
 /////////////////////////////////////////////////////////////////
 printf("Un programme qui calcule et affiche la distance entre deux points A et B.\n");
-printf("entrer les corddone de a ");
+printf("entrer les corddone de a\n ");
 int xa,xb,ya,yb;
 scanf("%d%d",&xa,&ya);
-printf("entrer les corddone de b ");
+printf("entrer les corddone de b \n ");
 scanf("%d%d",&xb,&yb);
 float distance;
 distance=sqrt(pow((xb-xa),2)+pow((yb-ya),2));
 printf("La distance entre A et B est : %.2f\n", distance);
 
+///////////////////////////////////////////////////////////////
+printf("entrer un nombre entre 1 et 7 \n");
+int day;
+scanf("%d",&day);
+switch (day){
+	case 1 : printf("lundi");
+	break;
+		case 2 : printf("mardi");
+	break;
+		case 3 : printf("mercredi");
+	break;
+		case 4 : printf("jeudi");
+	break;
+		case 5 : printf("vendredi");
+	break;
+		case 6 : printf("samedi");
+	break;
+		case 7 : printf("dimance");
+	break;
+		default  : printf("error");
+	break;
+}
+	
 }
 
 
